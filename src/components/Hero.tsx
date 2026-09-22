@@ -21,7 +21,7 @@ export default function Hero({ onOpenBooking, onNavigateTo }: HeroProps) {
       {/* Background Image: Centro Acupuntura del Valle */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.postimg.cc/v8ntDD0q/Centro-Vina.png"
+          src="/vina-del-mar.webp"
           alt="Centro Acupuntura del Valle - Viña del Mar"
           className="w-full h-full object-cover object-center filter brightness-[0.96] contrast-[0.98]"
           referrerPolicy="no-referrer"

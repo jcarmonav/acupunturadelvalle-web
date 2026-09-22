@@ -1,0 +1,8 @@
+{
+  "name": "Acupuntura del Valle",
+  "description": "Centro de Bienestar Integral - Terapias de acupuntura, medicina tradicional china, auriculoterapia, ventosas y masoterapia en Viña del Mar y Limache.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

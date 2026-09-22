@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-sage-50: #f6f8f0;
+  --color-sage-100: #ecf0de;
+  --color-sage-200: #d9e2c0;
+  --color-sage-300: #bdcf9a;
+  --color-sage-400: #9fb772;
+  --color-sage-500: #8a9a5b;
+  --color-sage-600: #6b7c41;
+  --color-sage-700: #56642b;
+  --color-sage-800: #424e23;
+  --color-sage-900: #2d3618;
+  --color-olive-dark: #262f1e;
+  --color-sand-warm: #faf9f5;
+  --color-sand-card: #f4f3ec;
+  --color-sand-muted: #e7e6dc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF9F5;
+  color: #262B24;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Ambient Zen shadows */
+.zen-shadow {
+  box-shadow: 0 10px 30px -10px rgba(86, 100, 43, 0.08), 0 4px 12px -4px rgba(0, 0, 0, 0.04);
+}
+
+.zen-shadow-hover {
+  transition: all 0.3s ease;
+}
+.zen-shadow-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -12px rgba(86, 100, 43, 0.14), 0 6px 16px -4px rgba(0, 0, 0, 0.06);
+}
+
+/* Continuous smooth marquee animations */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 55s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Interactive hover effect for branch booking cards */
+.location-schedule-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.location-schedule-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* Ocultar elementos demarcados exclusivamente en la ventana modal de agendamiento de Google Calendar */
+#gcal-schedule-modal-overlay .gcal-clean-hide,
+#gcal-schedule-modal-overlay img[src*="googleusercontent"],
+#gcal-schedule-modal-overlay [aria-label*="María Ignacia"],
+#gcal-schedule-modal-overlay [data-profile-photo],
+#gcal-schedule-modal-overlay img[src*="branding/productlogos/calendar"],
+#gcal-schedule-modal-overlay img[src*="calendar_2026"],
+#gcal-schedule-modal-overlay a[href*="calendar.google.com"],
+#gcal-schedule-modal-overlay [aria-label="Google Calendar"],
+#gcal-schedule-modal-overlay .citas-60-min,
+#gcal-schedule-modal-overlay .gcal-logo {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+

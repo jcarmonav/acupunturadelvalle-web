@@ -31,7 +31,7 @@ export default function Header({ onOpenBooking, onNavigateTo }: HeaderProps) {
           >
             <div className="w-11 h-11 rounded-full overflow-hidden border border-[#BDCF9A] flex items-center justify-center shadow-xs group-hover:border-[#56642B] transition-colors bg-white flex-shrink-0">
               <img
-                src={CLINIC_INFO.logoUrl || "https://i.postimg.cc/rp2V9nSf/Logo.jpg"}
+                src={CLINIC_INFO.logoUrl || "/Logo.webp"}
                 alt="Logo Acupuntura del Valle"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

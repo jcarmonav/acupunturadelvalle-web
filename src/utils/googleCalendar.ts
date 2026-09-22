@@ -189,7 +189,7 @@ export function openGoogleCalendar(location: SchedulingLocation = 'vina'): void 
   headerBrand.style.gap = '12px';
 
   const logoImg = document.createElement('img');
-  logoImg.src = '/Logo.jpg';
+  logoImg.src = '/Logo.webp';
   logoImg.alt = 'Acupuntura del Valle';
   logoImg.onerror = () => {
     logoImg.src = CLINIC_INFO.logoUrl;

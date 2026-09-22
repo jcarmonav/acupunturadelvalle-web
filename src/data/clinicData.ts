@@ -8,7 +8,7 @@ import imgFacial from '../assets/images/service_facial_1790082769981.jpg';
 export const CLINIC_INFO = {
   name: 'Acupuntura del Valle',
   subtitle: 'Centro de Bienestar Integral',
-  logoUrl: 'https://i.postimg.cc/rp2V9nSf/Logo.jpg',
+  logoUrl: '/Logo.webp',
   phone: '+56 9 7911 9374',
   phoneClean: '56979119374',
   whatsappUrl: 'https://wa.me/56979119374',

@@ -47,7 +47,7 @@ Quedo atento/a a su confirmación. ¡Muchas gracias!`;
         <div className="text-center mb-5">
           <div className="flex items-center justify-center gap-2.5 mx-auto mb-3">
             <img
-              src="/Logo.jpg"
+              src="/Logo.webp"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = CLINIC_INFO.logoUrl;
               }}

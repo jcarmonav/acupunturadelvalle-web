@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex items-center space-x-3">
             <div className="w-9 h-9 rounded-full overflow-hidden border border-[#BDCF9A] flex items-center justify-center bg-white shadow-xs flex-shrink-0">
               <img
-                src={CLINIC_INFO.logoUrl || "https://i.postimg.cc/rp2V9nSf/Logo.jpg"}
+                src={CLINIC_INFO.logoUrl || "/Logo.webp"}
                 alt="Logo Acupuntura del Valle"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
